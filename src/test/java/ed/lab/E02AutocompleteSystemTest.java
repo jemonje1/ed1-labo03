@@ -23,7 +23,7 @@ class E02AutocompleteSystemTest {
                 .toArray(String[]::new);
 
 
-        int[] array = Arrays.stream(initialOperation.expected().split(","))
+        int[] array = Arrays.stream(initialOperation.expected().trim().split(","))
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
